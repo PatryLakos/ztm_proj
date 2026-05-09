@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: ztm-proxy
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    envVars:
+      - key: ZTM_TOKEN
+        value: TWOJ_TOKEN_ZTM   # zmień to w panelu Render!
