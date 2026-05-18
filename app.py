@@ -1,5 +1,5 @@
 """
-ZTM Proxy — próbuje oba endpointy
+ZTM Proxy — próbuje oba endpointysss, zwraca dane w ujednoliconej formie. Używa tokena z env var ZTM_TOKEN.
 """
 from flask import Flask, jsonify, request
 import requests
